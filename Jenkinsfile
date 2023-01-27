@@ -29,6 +29,7 @@ pipeline {
           sh 'kubectl apply -f ./k8s/Secret.yaml'
           sh 'kubectl apply -f ./k8s/Service.yaml'
           sh 'kubectl apply -f ./k8s/Deployment.yaml'
+          sh 'kubectl apply -f ./prometheus-grafana/prometheus-grafana.yaml'
         }
       }
     }
